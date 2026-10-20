@@ -9,7 +9,7 @@ PAGE_ACCESS_TOKEN = os.environ.get("PAGE_ACCESS_TOKEN", "EAAXZBBaT3600BS8fEd7eZC
 
 
 @app.route("/webhook", methods=["GET"])
-fi def verify_webhook():
+ def verify_webhook():
   mode = request.args.get("hub.mode")
   token = request.args.get("hub.verify_token")
   challenge = request.args.get("hub.challenge")
